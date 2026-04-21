@@ -1,80 +1,98 @@
-# 🎨 دليل أدوات الذكاء الاصطناعي للصور
+# ⚡ PixLab AI — Turbo Edition
 
-> أكبر دليل عربي شامل لأدوات الذكاء الاصطناعي المرئي — من تطوير حسين علي
+> أول منصة ذكاء اصطناعي مجانية تجمع بين السرعة الفائقة والتحليل العميق للصور — تعمل 100% على GitHub Pages
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://YOUR-USERNAME.github.io/YOUR-REPO-NAME)
-[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
-
-## 🌟 نظرة عامة
-
-موقع ثابت (Static) يعمل على **GitHub Pages** بدون أي خادم (Server) — يجمع أفضل أدوات الذكاء الاصطناعي للصور في مكان واحد مع وصف تفصيلي بالعربية.
-
-## ✨ الأقسام الرئيسية
-
-### 🖼️ توليد الصور (Text-to-Image)
-| الأداة | المميزات | الرابط |
-|--------|----------|--------|
-| Microsoft Designer | مجاني، DALL-E 3، مثالي للمبتدئين | [designer.microsoft.com](https://designer.microsoft.com) |
-| Playground AI | 500 صورة/يوم، دعم Stable Diffusion | [playgroundai.com](https://playgroundai.com) |
-| Leonardo.ai | جودة سينمائية، 150 عملة/يوم | [app.leonardo.ai](https://app.leonardo.ai) |
-| Ideogram | الأفضل في دمج النصوص داخل الصور | [ideogram.ai](https://ideogram.ai) |
-| ChatGPT (DALL-E 3) | فهم العربية، تعديل بالمحادثة | [chat.openai.com](https://chat.openai.com) |
-| Google Gemini | Imagen 3، مجاني مع Google | [gemini.google.com](https://gemini.google.com) |
-
-### ✏️ تعديل ومونتاج الصور (AI Photo Editing)
-| الأداة | المميزات | الرابط |
-|--------|----------|--------|
-| Adobe Firefly | Generative Fill، آمن قانونياً | [firefly.adobe.com](https://firefly.adobe.com) |
-| Canva Magic Studio | Magic Edit, Expand, Background | [canva.com](https://canva.com) |
-| Photopea | فوتوشوب مجاني في المتصفح، دعم PSD | [photopea.com](https://photopea.com) |
-| Remove.bg | إزالة الخلفية في ثانية | [remove.bg](https://remove.bg) |
-| Clipdrop | أدوات Stability AI المتكاملة | [clipdrop.co](https://clipdrop.co) |
-
-### 🔍 تحسين الجودة والترميم (Upscaling & Enhancement)
-| الأداة | المميزات | الرابط |
-|--------|----------|--------|
-| VanceAI | رفع إلى 8K، تقليل التشويش | [vanceai.com](https://vanceai.com) |
-| Remini | ترميم الوجوه والصور القديمة | [remini.ai](https://remini.ai) |
-| Upscayl | مجاني مفتوح المصدر، 2x-8x | [upscayl.org](https://upscayl.org) |
-| Let's Enhance | رفع حتى 16x، للطباعة | [letsenhance.io](https://letsenhance.io) |
-| Topaz Gigapixel AI | المعيار الذهبي للمحترفين | [topazlabs.com](https://topazlabs.com) |
-
-### 💡 مساعد الأوامر (Prompt Builder)
-أداة تفاعلية تساعدك في بناء أوامر (Prompts) احترافية بخطوات بسيطة:
-- اختر الأسلوب الفني
-- حدد الإضاءة وزاوية الكاميرا
-- أضف تفاصيل إضافية
-- انسخ الأمر إلى أي أداة
-
-## 🚀 نشر الموقع على GitHub Pages
-
-1. **Fork** هذا المستودع أو **Clone** وأرفع الملفات
-2. اذهب إلى **Settings** → **Pages**
-3. اختر **Branch: main** والمجلد **/ (root)**
-4. اضغط **Save** — سيعمل الموقع في دقائق على:
-   ```
-   https://YOUR-USERNAME.github.io/YOUR-REPO-NAME
-   ```
-
-## 🛠️ التقنيات المستخدمة
-- **HTML5** — هيكل الموقع
-- **CSS3** — تصميم متجاوب مع دعم الوضع الداكن/الفاتح
-- **Vanilla JavaScript** — التفاعل وحفظ البيانات في localStorage
-- **Font Awesome 6** — الأيقونات
-- **Google Fonts (Cairo & Tajawal)** — الخطوط العربية
-- **GitHub Pages** — الاستضافة المجانية
-
-## 📱 الميزات
-- ✅ دعم كامل للعربية (RTL)
-- ✅ وضع داكن / فاتح
-- ✅ تصميم متجاوب للهواتف
-- ✅ مساعد بناء الأوامر التفاعلي
-- ✅ حفظ الأدوات المفضلة (localStorage)
-- ✅ يعمل بدون إنترنت بعد التحميل
-- ✅ بدون خوادم أو APIs مطلوبة
-
-## 📄 الترخيص
-MIT License — استخدم حر مع الإشارة للمصدر
+[![Live Demo](https://img.shields.io/badge/GitHub%20Pages-Live-00d4ff?style=flat)](https://YOUR-USERNAME.github.io/pixlab-ai)
+[![Free](https://img.shields.io/badge/Cost-Free-00ff88?style=flat)](https://github.com)
 
 ---
+
+## 🛠️ محركات الذكاء الاصطناعي المدمجة
+
+| المحرك | الدور | المزود | التكلفة |
+|--------|-------|--------|---------|
+| ⚡ **Z Image Turbo** | توليد الصور (< 10 ثوانٍ) | HuggingFace FLUX.1-schnell | مجاني |
+| 🧬 **Nano Banana 2** | تحليل الصور + كتابة الأوامر | Google Gemini 1.5 Flash | مجاني |
+| 🤖 **GPT-4o-mini** | تحسين الأوامر النصية | OpenAI | اختياري |
+
+---
+
+## 🔑 مفاتيح API المطلوبة
+
+### 1. Google Gemini API Key (مجاني — مطلوب للتحليل)
+1. اذهب إلى [aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)
+2. سجّل الدخول بحساب Google
+3. اضغط **"Create API Key"**
+4. انسخ المفتاح (يبدأ بـ `AIza...`)
+
+### 2. HuggingFace Token (مجاني — مطلوب للتوليد)
+1. سجّل على [huggingface.co/join](https://huggingface.co/join)
+2. اذهب إلى [Settings → Access Tokens](https://huggingface.co/settings/tokens)
+3. اضغط **"New token"** → اختر **Read** access
+4. انسخ الرمز (يبدأ بـ `hf_...`)
+
+### 3. OpenAI API Key (اختياري — لزر "تحسين بـ GPT")
+- احصل عليه من [platform.openai.com/api-keys](https://platform.openai.com/api-keys)
+- إذا لم يكن لديك، سيستخدم التطبيق Gemini بدلاً منه تلقائياً
+
+---
+
+## ✨ الميزات
+
+### 🔍 التحليل التلقائي (Vision-to-Text)
+- ارفع أي صورة → Nano Banana يفحصها فوراً
+- يكتشف العناصر: الأشخاص، الملابس، الخلفية، الكائنات
+- يكتب أمراً (Prompt) احترافياً تلقائياً في صندوق الأوامر
+
+### 🎨 قائمة التعديل التفاعلية (Dynamic Editing List)
+- يظهر قائمة بكل عنصر مكتشف في الصورة
+- يمكنك تعديل كل عنصر: "بنطال أبيض" → "جينز أزرق"
+- يطبّق التعديل تلقائياً في أمر التوليد
+
+### ⚡ التوليد السريع بـ Z Image Turbo
+- يولد صورة جديدة بناءً على الأمر في أقل من 10 ثوانٍ
+- يدعم أحجام: 512×512, 768×768, 1024×1024, وغيرها
+- مدعوم بنموذج FLUX.1-schnell الأحدث
+
+### 🤖 تحسين الأوامر بـ GPT
+- اكتب وصفاً بسيطاً → GPT يحوّله إلى أمر سينمائي احترافي
+- إذا لم يكن لديك OpenAI، يستخدم Gemini بديلاً
+
+---
+
+## 🚀 نشر على GitHub Pages
+
+```bash
+# 1. أنشئ repository جديداً على GitHub
+# 2. ارفع ملف index.html
+git init
+git add index.html README.md
+git commit -m "feat: PixLab AI Turbo Edition"
+git push origin main
+
+# 3. Settings → Pages → Branch: main → /root → Save
+# سيعمل الموقع على: https://USERNAME.github.io/REPO-NAME
+```
+
+---
+
+## 🔒 الأمان
+
+- ✅ جميع المفاتيح محفوظة في **localStorage** (على جهازك فقط)
+- ✅ لا يتم إرسال المفاتيح لأي خادم
+- ✅ الاتصال مباشرة من المتصفح إلى APIs الرسمية
+- ⚠️ لا تشارك رابط موقعك مع مفاتيحك المُدخلة — هي خاصة بمتصفحك
+
+---
+
+## 🛠️ التقنيات
+
+- **HTML5 + CSS3 + Vanilla JS** — بدون frameworks
+- **Google Gemini 1.5 Flash** — Vision + Text generation
+- **HuggingFace Inference API** — FLUX.1-schnell image generation
+- **OpenAI API** — GPT-4o-mini prompt enhancement
+- **GitHub Pages** — استضافة مجانية
+
+---
+
 **من تطوير: حسين علي** | [@gt_v8i](https://www.instagram.com/gt_v8i)
