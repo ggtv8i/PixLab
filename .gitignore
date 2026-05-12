@@ -1,0 +1,789 @@
+```
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.*
+
+# Logs
+*.log
+
+# Build artifacts
+dist/
+build/
+coverage/
+.nyc_output/
+coverage-final.json
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Process pid files
+*.pid
+
+# Runtime data
+*.sock
+
+# Debug log
+debug.log
+
+# NPM related
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node.js specific
+*.tsbuildinfo
+next-env.d.ts
+
+# Package manager lock files
+package-lock.json
+yarn.lock
+
+# System Files
+ehthumbs.db
+Icon?
+desktop.ini
+
+# Editor backup files
+*~
+*.bak
+*.tmp
+
+# Compiled JavaScript
+*.min.js
+*.bundle.js
+
+# Map files
+*.map
+
+# Temporary files
+*.tmp
+*.temp
+
+# Local configuration
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Sensitive files
+config/secrets.yml
+config/credentials.yml
+
+# Database
+*.db
+*.db-journal
+
+# Session
+sess/
+
+# Output of 'npm install --production'
+node_modules_prod/
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# nyc test coverage
+.nyc_output/
+
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Bower dependency directory (https://bower.io/)
+bower_components/
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript v1 declaration files
+typings/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# JSTS compiled output
+out/
+out-tsc/
+
+# SystemJS loader
+systemjs.config.js
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler from using the .cache folder
+.cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build output
+.nuxt
+
+# Vue.js build output
+dist/
+
+# Electron build output
+release/
+dist_electron/
+
+# PyInstaller
+*.spec
+
+# Sphinx documentation
+docs/_build/
+
+# Doxygen output
+docs/html/
+
+# Angular build output
+aot/
+dist/
+dist_prod/
+tmp/
+output-tmp/
+
+# Ember CLI build output
+tmp/
+dist/
+dist_prod/
+
+# React Native build output
+android/app/build/
+ios/build/
+
+# Ionic build output
+ionic/www/
+
+# Cordova build output
+platforms/
+plugins/
+
+# PhoneGap build output
+www/
+
+# Webpack build output
+webpack-stats.json
+
+# Jest test results
+coverage/
+junit.xml
+
+# Karma reports
+karma-reports/
+
+# Travis-CI generated files
+.travis.yml
+
+# CircleCI generated files
+.circleci/config.yml
+
+# AppVeyor generated files
+.appveyor.yml
+
+# CodeCov generated files
+.codecov.yml
+
+# Coveralls generated files
+.coveralls.yml
+
+# SonarQube generated files
+.sonar/
+
+# ESLint cache
+.eslintcache
+
+# TSLint cache
+.tslintcache
+
+# Babel cache
+.cache/
+
+# Flow typed cache
+.flow/
+.flowconfig
+
+# Immutable.js Record
+*.ir
+
+# JSHint
+.jshintrc
+
+# JSCS
+.jscsrc
+
+# oclif
+.cache/
+.id/
+
+# Serverless
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local
+.dynamodb/
+
+# Swift Package Manager
+.swiftpm/
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+*.pbxuser
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+*.xcmappingmodel
+*.xcuserstate
+project.xcworkspace/
+contents.xcworkspacedata
+xcuserdata/
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM/
+
+# Android Studio
+*.iml
+*.hprof
+*.orig
+*.rej
+*~
+# native
+local.properties
+.gradle/
+.settings/
+.loadpath
+.recommenders
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+# User-specific stuff:
+*.iml
+*.ipr
+*.iws
+*.swp
+*.swo
+*~
+
+# User-specific stuff that might be shared with certain workflows through.
+.idea/
+
+# Generated class file for RCTWebSocketModule
+RCTWebSocketModule.*.js
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+*.-bin
+*.patch
+!COMMIT_EDITMSG
+~$*
+*.lnk
+
+# Linux
+*~
+
+# npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# nyc test coverage
+.nyc_output/
+
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Bower dependency directory (https://bower.io/)
+bower_components/
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript v1 declaration files
+typings/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# JSTS compiled output
+out/
+out-tsc/
+
+# SystemJS loader
+systemjs.config.js
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler from using the .cache folder
+.cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build output
+.nuxt
+
+# Vue.js build output
+dist/
+
+# Electron build output
+release/
+dist_electron/
+
+# PyInstaller
+*.spec
+
+# Sphinx documentation
+docs/_build/
+
+# Doxygen output
+docs/html/
+
+# Angular build output
+aot/
+dist/
+dist_prod/
+tmp/
+output-tmp/
+
+# Ember CLI build output
+tmp/
+dist/
+dist_prod/
+
+# React Native build output
+android/app/build/
+ios/build/
+
+# Ionic build output
+ionic/www/
+
+# Cordova build output
+platforms/
+plugins/
+
+# PhoneGap build output
+www/
+
+# Webpack build output
+webpack-stats.json
+
+# Jest test results
+coverage/
+junit.xml
+
+# Karma reports
+karma-reports/
+
+# Travis-CI generated files
+.travis.yml
+
+# CircleCI generated files
+.circleci/config.yml
+
+# AppVeyor generated files
+.appveyor.yml
+
+# CodeCov generated files
+.codecov.yml
+
+# Coveralls generated files
+.coveralls.yml
+
+# SonarQube generated files
+.sonar/
+
+# ESLint cache
+.eslintcache
+
+# TSLint cache
+.tslintcache
+
+# Babel cache
+.cache/
+
+# Flow typed cache
+.flow/
+.flowconfig
+
+# Immutable.js Record
+*.ir
+
+# JSHint
+.jshintrc
+
+# JSCS
+.jscsrc
+
+# oclif
+.cache/
+.id/
+
+# Serverless
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local
+.dynamodb/
+
+# Swift Package Manager
+.swiftpm/
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+*.pbxuser
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+*.xcmappingmodel
+*.xcuserstate
+project.xcworkspace/
+contents.xcworkspacedata
+xcuserdata/
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM/
+
+# Android Studio
+*.iml
+*.hprof
+*.orig
+*.rej
+*~
+# native
+local.properties
+.gradle/
+.settings/
+.loadpath
+.recommenders
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+# User-specific stuff:
+*.iml
+*.ipr
+*.iws
+*.swp
+*.swo
+*~
+
+# User-specific stuff that might be shared with certain workflows through.
+.idea/
+
+# Generated class file for RCTWebSocketModule
+RCTWebSocketModule.*.js
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+*.-bin
+*.patch
+!COMMIT_EDITMSG
+~$*
+*.lnk
+
+# Linux
+*~
+
+# npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# nyc test coverage
+.nyc_output/
+
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Bower dependency directory (https://bower.io/)
+bower_components/
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript v1 declaration files
+typings/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# JSTS compiled output
+out/
+out-tsc/
+
+# SystemJS loader
+systemjs.config.js
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler from using the .cache folder
+.cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build output
+.nuxt
+
+# Vue.js build output
+dist/
+
+# Electron build output
+release/
+dist_electron/
+
+# PyInstaller
+*.spec
+
+# Sphinx documentation
+docs/_build/
+
+# Doxygen output
+docs/html/
+
+# Angular build output
+aot/
+dist/
+dist_prod/
+tmp/
+output-tmp/
+
+# Ember CLI build output
+tmp/
+dist/
+dist_prod/
+
+# React Native build output
+android/app/build/
+ios/build/
+
+# Ionic build output
+ionic/www/
+
+# Cordova build output
+platforms/
+plugins/
+
+# PhoneGap build output
+www/
+
+# Webpack build output
+webpack-stats.json
+
+# Jest test results
+coverage/
+junit.xml
+
+# Karma reports
+karma-reports/
+
+# Travis-CI generated files
+.travis.yml
+
+# CircleCI generated files
+.circleci/config.yml
+
+# AppVeyor generated files
+.appveyor.yml
+
+# CodeCov generated files
+.codecov.yml
+
+# Coveralls generated files
+.coveralls.yml
+
+# SonarQube generated files
+.sonar/
+
+# ESLint cache
+.eslintcache
+
+# TSLint cache
+.tslintcache
+
+# Babel cache
+.cache/
+
+# Flow typed cache
+.flow/
+.flowconfig
+
+# Immutable.js Record
+*.ir
+
+# JSHint
+.jshintrc
+
+# JSCS
+.jscsrc
+
+# oclif
+.cache/
+.id/
+
+# Serverless
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local
+.dynamodb/
+
+# Swift Package Manager
+.swiftpm/
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+*.pbxuser
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+*.xcmappingmodel
+*.xcuserstate
+project.xcworkspace/
+contents.xcworkspacedata
+xcuserdata/
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM/
+
+# Android Studio
+*.iml
+*.hprof
+*.orig
+*.rej
+*~
+# native
+local.properties
+.gradle/
+.settings/
+.loadpath
+.recommenders
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+# User-specific stuff:
+*.iml
+*.ipr
+*.iws
+*.swp
+*.swo
+*~
+
+# User-specific stuff that might be shared with certain workflows through.
+.idea/
+
+# Generated class file for RCTWebSocketModule
+RCTWebSocketModule.*.js
+
+```

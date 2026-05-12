@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayFlow - Endless Mini-Games Platform</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Splash Screen -->
+  <div id="splash-screen" class="splash-screen">
+    <div class="splash-content">
+      <h1 class="logo">🎮 PlayFlow</h1>
+      <p class="tagline">Endless Mini-Games at Your Fingertips</p>
+      <button id="google-login-btn" class="google-btn">
+        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo">
+        Sign in with Google
+      </button>
+    </div>
+  </div>
+
+  <!-- Main App -->
+  <div id="app" class="app hidden">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-brand">🎮 PlayFlow</div>
+      <div class="nav-links">
+        <a href="#" class="nav-link active" data-page="feed">Feed</a>
+        <a href="#" class="nav-link" data-page="create">Create</a>
+        <a href="#" class="nav-link" data-page="library">Library</a>
+        <a href="#" class="nav-link" data-page="profile">Profile</a>
+      </div>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn">🌙</button>
+        <img id="user-avatar" class="user-avatar" src="" alt="Profile">
+      </div>
+    </nav>
+
+    <!-- Feed Page (Endless Scrolling) -->
+    <main id="feed-page" class="page active">
+      <div class="game-feed" id="game-feed">
+        <!-- Games will be loaded here dynamically -->
+      </div>
+      <div class="loading-indicator" id="feed-loading">
+        <div class="spinner"></div>
+        <p>Loading more games...</p>
+      </div>
+    </main>
+
+    <!-- Create Page -->
+    <main id="create-page" class="page hidden">
+      <div class="create-container">
+        <h2>Create Your Game</h2>
+        <form id="game-form" class="game-form">
+          <div class="form-group">
+            <label for="game-title">Game Title</label>
+            <input type="text" id="game-title" required maxlength="100" placeholder="Enter game title">
+          </div>
+          
+          <div class="form-group">
+            <label for="game-description">Description</label>
+            <textarea id="game-description" required maxlength="1000" placeholder="Describe your game"></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="game-category">Category</label>
+            <select id="game-category" required>
+              <option value="">Select category</option>
+              <option value="action">Action</option>
+              <option value="puzzle">Puzzle</option>
+              <option value="adventure">Adventure</option>
+              <option value="strategy">Strategy</option>
+              <option value="arcade">Arcade</option>
+              <option value="casual">Casual</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="game-tags">Tags (comma separated)</label>
+            <input type="text" id="game-tags" placeholder="fun, multiplayer, retro">
+          </div>
+          
+          <div class="form-group">
+            <label>Game Code</label>
+            <div class="code-editor">
+              <div class="editor-tabs">
+                <button type="button" class="tab-btn active" data-tab="html">HTML</button>
+                <button type="button" class="tab-btn" data-tab="css">CSS</button>
+                <button type="button" class="tab-btn" data-tab="js">JavaScript</button>
+              </div>
+              <textarea id="code-html" class="code-input active" placeholder="<canvas id='game'></canvas>"></textarea>
+              <textarea id="code-css" class="code-input" placeholder="/* Your styles */"></textarea>
+              <textarea id="code-js" class="code-input" placeholder="// Your game logic"></textarea>
+            </div>
+          </div>
+          
+          <div class="form-actions">
+            <button type="button" id="preview-btn" class="btn btn-secondary">Preview</button>
+            <button type="submit" class="btn btn-primary">Publish Game</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Library Page -->
+    <main id="library-page" class="page hidden">
+      <h2>Your Saved Games</h2>
+      <div class="games-grid" id="library-games">
+        <!-- Saved games will be loaded here -->
+      </div>
+    </main>
+
+    <!-- Profile Page -->
+    <main id="profile-page" class="page hidden">
+      <div class="profile-header">
+        <div class="profile-cover" id="profile-cover"></div>
+        <div class="profile-info">
+          <img id="profile-avatar" class="profile-avatar" src="" alt="Profile">
+          <h2 id="profile-name">User Name</h2>
+          <p id="profile-bio" class="profile-bio">Bio goes here...</p>
+          <div class="profile-stats">
+            <div class="stat">
+              <span class="stat-value" id="stat-games">0</span>
+              <span class="stat-label">Games Created</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" id="stat-saved">0</span>
+              <span class="stat-label">Saved Games</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" id="stat-scores">0</span>
+              <span class="stat-label">High Scores</span>
+            </div>
+          </div>
+          <button id="edit-profile-btn" class="btn btn-secondary">Edit Profile</button>
+        </div>
+      </div>
+      
+      <div class="profile-section">
+        <h3>My Games</h3>
+        <div class="games-grid" id="profile-games">
+          <!-- User's games will be loaded here -->
+        </div>
+      </div>
+      
+      <div class="profile-section">
+        <h3>Achievements</h3>
+        <div class="badges-grid" id="profile-badges">
+          <!-- Badges will be loaded here -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Game Modal -->
+    <div id="game-modal" class="modal hidden">
+      <div class="modal-content game-modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="game-player" id="game-player">
+          <!-- Game iframe will be injected here -->
+        </div>
+        <div class="game-info">
+          <h3 id="modal-game-title">Game Title</h3>
+          <p id="modal-game-desc">Game description</p>
+          <div class="game-actions">
+            <button id="modal-like-btn" class="action-btn">❤️ <span id="like-count">0</span></button>
+            <button id="modal-save-btn" class="action-btn">🔖 Save</button>
+            <button id="modal-share-btn" class="action-btn">📤 Share</button>
+          </div>
+        </div>
+        <div class="comments-section">
+          <h4>Comments</h4>
+          <div id="comments-list" class="comments-list">
+            <!-- Comments will be loaded here -->
+          </div>
+          <form id="comment-form" class="comment-form">
+            <textarea id="comment-text" placeholder="Add a comment..." maxlength="500"></textarea>
+            <button type="submit" class="btn btn-primary">Post Comment</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/app.js" type="module"></script>
+</body>
+</html>
